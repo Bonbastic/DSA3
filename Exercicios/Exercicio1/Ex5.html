@@ -15,6 +15,21 @@
 
 </head>
 <body>
- 
+   <script>   
+        var hora = new Date().getHours();
+        var nome 
+        var idade
+        nome = prompt('Escreva seu nome: ')
+        idade = prompt('Escreva sua idade: ')
+        if(nome.length == 0 || idade.length == 0){
+            alert('Não deixe em branco!!!!')
+        }else if(hora >= 0 && hora <= 11){
+            document.write('Boa dia, <b>' + nome.toUpperCase() + '</b> <br>' + 'Você tem <b>' + idade.toUpperCase() + '</b> anos de idade.')
+        }else if(hora >= 12 && hora <= 18){
+            document.write('Boa tarde, <b>' + nome.toUpperCase() + '</b> <br>' + 'Você tem <b>' + idade.toUpperCase() + '</b> anos de idade.')
+        }else if(hora >= 18 && hora <= 23){
+            document.write('Boa noite, <b>' + nome.toUpperCase() + '</b> <br>' + 'Você tem <b>' + idade.toUpperCase() + '</b> anos de idade.')
+        }
+    </script>
 </body>
 </html>
